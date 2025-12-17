@@ -1,0 +1,9 @@
+# Minimal requirements for Visualization — Face Embeddings
+numpy>=1.24
+matplotlib>=3.6
+plotly>=5.9
+umap-learn>=0.5.4
+scikit-learn>=1.2
+pillow>=9.5
+# Optional (for notebooks / interactive work)
+jupyterlab>=4.0

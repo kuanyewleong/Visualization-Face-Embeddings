@@ -528,28 +528,29 @@ def create_3d_animation(embeddings_3d, labels, output_path='3d_rotation.gif'):
 
 # ==================== USAGE EXAMPLES ====================
 
-# Example 1: Basic interactive visualization
-fig = create_3d_face_visualization(
-    n_samples=10000,           # Start with 20K samples
-    n_classes_to_show=500,      # Show 40 identities in color
-    reduction_method='umap',   # Use UMAP (best for face embeddings)
-    interactive=True          # Use Plotly for interactivity
-)
+if __name__ == "__main__":
+    # Example 1: Basic interactive visualization
+    fig = create_3d_face_visualization(
+        n_samples=10000,           # Start with 20K samples
+        n_classes_to_show=500,      # Show 40 identities in color
+        reduction_method='umap',   # Use UMAP (best for face embeddings)
+        interactive=True          # Use Plotly for interactivity
+    )
 
-# Example 2: Static visualization for publication
-# fig = create_3d_face_visualization(
-#     n_samples=50000,
-#     n_classes_to_show=30,
-#     reduction_method='pca',  # Faster for large samples
-#     interactive=False       # Use Matplotlib
-# )
+    # Example 2: Static visualization for publication
+    # fig = create_3d_face_visualization(
+    #     n_samples=50000,
+    #     n_classes_to_show=30,
+    #     reduction_method='pca',  # Faster for large samples
+    #     interactive=False       # Use Matplotlib
+    # )
 
-# Example 3: Load pre-computed 3D embeddings and visualize
-# embeddings_3d = np.load('embeddings_3d_umap.npy')
-# labels = np.load('labels.npy')
-# create_interactive_3d_plotly(embeddings_3d, labels)
+    # Example 3: Load pre-computed 3D embeddings and visualize
+    # embeddings_3d = np.load('embeddings_3d_umap.npy')
+    # labels = np.load('labels.npy')
+    # create_interactive_3d_plotly(embeddings_3d, labels)
 
-# Example 4: Visualize specific identity clusters
-# (After running create_3d_face_visualization)
-# embeddings_3d, labels_sample = get_sampled_data()  # You'd need to return these
-# visualize_identity_clusters(embeddings_3d, labels_sample, specific_identities=[42, 123, 456, 789, 1011])
+    # Example 4: Visualize specific identity clusters
+    # (After running create_3d_face_visualization)
+    # embeddings_3d, labels_sample = get_sampled_data()  # You'd need to return these
+    # visualize_identity_clusters(embeddings_3d, labels_sample, specific_identities=[42, 123, 456, 789, 1011])
