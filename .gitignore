@@ -1,0 +1,21 @@
+.venv
+*.pyc
+.vscode
+*.ckpt
+.idea
+experiments
+playground
+validation_ijbs
+*.pkl
+*.csv
+*.htm*
+result
+
+
+# Ignore result and test files / gallery /models etc.
+analysis_results
+gallery_faces
+pretrained
+test_cases
+dataroot
+embedding_ir101_adaface
