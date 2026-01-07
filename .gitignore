@@ -19,3 +19,5 @@ pretrained
 test_cases
 dataroot
 embedding_ir101_adaface
+out_3d
+csv*
